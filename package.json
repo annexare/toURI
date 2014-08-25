@@ -1,0 +1,34 @@
+{
+    "name": "toURI",
+    "version": "1.0.0",
+    "description": "Transliteration for JavaScript & Node.js, basically used for URI generation. As small and simple as possible.",
+    "keywords": [
+        "annexare",
+        "toURI",
+        "transliterate",
+        "transliteration",
+        "seo", "URL", "URI",
+        "node"
+    ],
+    "license" : "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/annexare/toURI"
+    },
+    "author": {
+        "name": "Dmitry K.",
+        "email": "z@annexare.com",
+        "url": "https://github.com/z-ax"
+    },
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-header": "*",
+        "gulp-rename": "*",
+        "gulp-uglify": "*",
+        "gulp-watch": "*",
+        "moment": "*"
+    },
+    "engines": {
+        "node": ">=0.8.0"
+    }
+}
