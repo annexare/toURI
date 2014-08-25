@@ -1,6 +1,6 @@
 {
     "name": "toURI",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Transliteration for JavaScript & Node.js, basically used for URI generation. As small and simple as possible.",
     "keywords": [
         "annexare",
@@ -16,7 +16,7 @@
         "email": "z@annexare.com",
         "url": "https://github.com/z-ax"
     },
-    "main": "toURI.js",
+    "main": "lib/toURI.js",
     "moduleType": [
         "amd",
         "globals",
