@@ -1,6 +1,6 @@
 # String.toURI() for JavaScript
 
-Transliteration for JavaScript &amp; Node.js, basically used for URI generation. As small and simple as possible.
+Transliteration for JavaScript &amp; Node.js, basically used for URI generation. As small and simple as possible, but has a basic language detection because of Russian/Ukrainian transliteration of "и" character.
 
 ## Usage
 
