@@ -7,10 +7,12 @@ Transliteration for JavaScript &amp; Node.js, basically used for URI generation.
 Basically, just call `.toURI()` for a String and you'll get a URL friendly string, separated with dashes ("-") by default. Example:
 
 ```js
-"Тест: Чи отримаємо те, чого очікуємо? + /English/".toURI();
-// "test-chi-otrimayemo-te-chogo-ochikuyemo+english"
-```
+"Тест: Чи маємо те, на що чекаємо? + /English Text Remains/?".toURI()
+// test-chy-mayemo-te-na-shcho-chekayemo+english-text-remains
 
+"Тест: Проверим текст на русском языке".toURI()
+// test-proverim-tekst-na-russkom-yazyke
+```
 
 ## Credits
 
