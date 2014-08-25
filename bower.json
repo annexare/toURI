@@ -1,5 +1,5 @@
 {
-    "name": "toURI",
+    "name": "to-uri",
     "version": "1.0.1",
     "description": "Transliteration for JavaScript & Node.js, basically used for URI generation. As small and simple as possible.",
     "keywords": [
