@@ -1,6 +1,6 @@
 {
-    "name": "to-uri",
-    "version": "1.0.1",
+    "name": "toURI",
+    "version": "1.0.2",
     "description": "Transliteration for JavaScript & Node.js, basically used for URI generation. As small and simple as possible.",
     "keywords": [
         "annexare",
@@ -16,6 +16,11 @@
         "email": "z@annexare.com",
         "url": "https://github.com/z-ax"
     },
+    "ignore": [
+        ".gitignore",
+        "gulpfile.js",
+        "node_modules"
+    ],
     "main": "lib/toURI.js",
     "moduleType": [
         "amd",
