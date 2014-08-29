@@ -6,6 +6,11 @@ Transliteration for JavaScript &amp; Node.js, basically used for URI generation.
 
 Basically, just call `toURI()` with a String and you'll get a SEO friendly URL, separated with dashes (**"-"**) by default. Also, there's a `transliterate()` method, but it always works with `toLowerCase()` right now, not sure should it be improved yet or not.
 
+### Packages:
+
+* `bower install to-uri`
+* `npm install to-uri`
+
 ### Examples:
 
 ```js
