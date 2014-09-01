@@ -15,10 +15,10 @@ Basically, just call `toURI()` with a String and you'll get a SEO friendly URL, 
 
 ```js
 toURI("Тест: Чи маємо те, на що чекаємо? + /English Text Remains/?")
-// test-chy-mayemo-te-na-shcho-chekayemo+english-text-remains
+// test-chy-maiemo-te-na-shcho-chekaiemo+english-text-remains
 
 toURI("Тест: Проверим текст на русском языке")
-// test-proverim-tekst-na-russkom-yazyke
+// test-proverim-text-na-russkom-yazyke
 ```
 
 ## Credits
