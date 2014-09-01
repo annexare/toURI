@@ -40,26 +40,35 @@
       </nav>
       <section>
         <h1>
-<a name="stringtouri-for-javascript" class="anchor" href="#stringtouri-for-javascript"><span class="octicon octicon-link"></span></a>String.toURI() for JavaScript</h1>
+<a name="string-touri--transliterate-for-javascript" class="anchor" href="#string-touri--transliterate-for-javascript"><span class="octicon octicon-link"></span></a>String: toURI() &amp; transliterate() for JavaScript</h1>
 
-<p>Transliteration for JavaScript &amp; Node.js, basically used for URI generation. As small and simple as possible, but has a basic language detection because of Russian/Ukrainian transliteration of "и" character.</p>
+<p>Transliteration for JavaScript &amp; Node.js, basically used for URI generation. As small'n'simple as possible, but has a basic Ukrainian/Russian language detection for <strong>"и"</strong> char replacements.</p>
 
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>Basically, just call <code>.toURI()</code> for a String and you'll get a URL friendly string, separated with dashes ("-") by default. Example:</p>
+<p>Basically, just call <code>toURI()</code> with a String and you'll get a SEO friendly URL, separated with dashes (<strong>"-"</strong>) by default. Also, there's a <code>transliterate()</code> method, but it always works with <code>toLowerCase()</code> right now, not sure should it be improved yet or not.</p>
 
-<div class="highlight highlight-js"><pre><span class="s2">"Тест: Чи маємо те, на що чекаємо? + /English Text Remains/?"</span><span class="p">.</span><span class="nx">toURI</span><span class="p">()</span>
-<span class="c1">// test-chy-mayemo-te-na-shcho-chekayemo+english-text-remains</span>
+<h3>
+<a name="packages" class="anchor" href="#packages"><span class="octicon octicon-link"></span></a>Packages:</h3>
 
-<span class="s2">"Тест: Проверим текст на русском языке"</span><span class="p">.</span><span class="nx">toURI</span><span class="p">()</span>
-<span class="c1">// test-proverim-tekst-na-russkom-yazyke</span>
+<ul>
+<li><code>bower install to-uri</code></li>
+<li><code>npm install to-uri</code></li>
+</ul><h3>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples:</h3>
+
+<div class="highlight highlight-js"><pre><span class="nx">toURI</span><span class="p">(</span><span class="s2">"Тест: Чи маємо те, на що чекаємо? + /English Text Remains/?"</span><span class="p">)</span>
+<span class="c1">// test-chy-maiemo-te-na-shcho-chekaiemo+english-text-remains</span>
+
+<span class="nx">toURI</span><span class="p">(</span><span class="s2">"Тест: Проверим текст на русском языке"</span><span class="p">)</span>
+<span class="c1">// test-proverim-text-na-russkom-yazyke</span>
 </pre></div>
 
 <h2>
 <a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
 
-<p>Prepared by <a href="https://annexare.com/">Annexare Studio</a>. Feel free to use it as you need in your apps or send updates into <a href="https://github.com/annexare/toURI">this</a> public repository. It's under MIT license.</p>
+<p>Prepared by <a href="https://annexare.com/">Annexare Studio</a>. Feel free to use it as you need in your apps or send updates into <a href="https://github.com/annexare/toURI">this public repository</a>. It's under MIT license.</p>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/annexare">annexare</a></p>
