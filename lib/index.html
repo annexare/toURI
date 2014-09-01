@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>toURI() Test Page</title>
+	<style>
+		body, input {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+		}
+		.block {
+			display: block;
+			margin: .5em auto;
+			padding: 4px 10px;
+			text-align: left;
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+
+<h1 class="block">toURI() Test Page</h1>
+<center>
+	<input type="text" id="text" onkeyup="checkURI(); return false;" size="100" class="block">
+	<p id="result" class="block"></p>
+</center>
+
+<script src="toURI.js"></script>
+<script>
+	var text = document.getElementById('text'),
+		result = document.getElementById('result');
+
+	window.checkURI = function (e) {
+		if (e) {
+			e.stopPropagation();
+		}
+
+		console.log(' > ', text.value);
+		result.innerHTML = toURI(text.value || '');
+
+		return false;
+	};
+
+	text.focus();
+</script>
+
+</body>
+</html>
