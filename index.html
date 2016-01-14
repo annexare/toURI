@@ -1,82 +1,65 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>String.toURI() for JavaScript by annexare</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <section class="page-header">
+      <h1 class="project-name">String.toURI() for JavaScript</h1>
+      <h2 class="project-tagline">Transliteration for JavaScript &amp; Node.js, basically used for SEO URI generation. As small and simple as possible.</h2>
+      <a href="https://github.com/annexare/toURI" class="btn">View on GitHub</a>
+      <a href="https://github.com/annexare/toURI/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/annexare/toURI/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>String.toURI() for JavaScript</h1>
-        <p>Transliteration for JavaScript &amp; Node.js, basically used for SEO URI generation. As small and simple as possible.</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/annexare/toURI" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/annexare/toURI/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/annexare/toURI/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a name="string-touri--transliterate-for-javascript" class="anchor" href="#string-touri--transliterate-for-javascript"><span class="octicon octicon-link"></span></a>String: toURI() &amp; transliterate() for JavaScript</h1>
+    <section class="main-content">
+      <h1>
+<a id="string-touri--transliterate-for-javascript" class="anchor" href="#string-touri--transliterate-for-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>String: toURI() &amp; transliterate() for JavaScript</h1>
 
 <p>Transliteration for JavaScript &amp; Node.js, basically used for URI generation. As small'n'simple as possible, but has a basic Ukrainian/Russian language detection for <strong>"и"</strong> char replacements.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>Basically, just call <code>toURI()</code> with a String and you'll get a SEO friendly URL, separated with dashes (<strong>"-"</strong>) by default. Also, there's a <code>transliterate()</code> method, but it always works with <code>toLowerCase()</code> right now, not sure should it be improved yet or not.</p>
 
 <h3>
-<a name="packages" class="anchor" href="#packages"><span class="octicon octicon-link"></span></a>Packages:</h3>
+<a id="packages" class="anchor" href="#packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Packages:</h3>
 
 <ul>
 <li><code>bower install to-uri</code></li>
 <li><code>npm install to-uri</code></li>
-</ul><h3>
-<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples:</h3>
+</ul>
 
-<div class="highlight highlight-js"><pre><span class="nx">toURI</span><span class="p">(</span><span class="s2">"Тест: Чи маємо те, на що чекаємо? + /English Text Remains/?"</span><span class="p">)</span>
-<span class="c1">// test-chy-maiemo-te-na-shcho-chekaiemo+english-text-remains</span>
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples:</h3>
 
-<span class="nx">toURI</span><span class="p">(</span><span class="s2">"Тест: Проверим текст на русском языке"</span><span class="p">)</span>
-<span class="c1">// test-proverim-text-na-russkom-yazyke</span>
-</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">toURI</span>(<span class="pl-s"><span class="pl-pds">"</span>Тест: Чи маємо те, на що чекаємо? + /English Text Remains/?<span class="pl-pds">"</span></span>)
+<span class="pl-c">// test-chy-maiemo-te-na-shcho-chekaiemo+english-text-remains</span>
+
+<span class="pl-en">toURI</span>(<span class="pl-s"><span class="pl-pds">"</span>Тест: Проверим текст на русском языке<span class="pl-pds">"</span></span>)
+<span class="pl-c">// test-proverim-text-na-russkom-yazyke</span></pre></div>
 
 <h2>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <p>Prepared by <a href="https://annexare.com/">Annexare Studio</a>. Feel free to use it as you need in your apps or send updates into <a href="https://github.com/annexare/toURI">this public repository</a>. It's under MIT license.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/annexare">annexare</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/annexare/toURI">String.toURI() for JavaScript</a> is maintained by <a href="https://github.com/annexare">annexare</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
