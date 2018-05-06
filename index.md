@@ -1,5 +1,9 @@
 # String: toURI() &amp; transliterate() for JavaScript
 
+[![Monthly Downloads](https://img.shields.io/npm/dm/to-uri.svg)](https://www.npmjs.com/package/to-uri)
+[![NPM](https://img.shields.io/npm/v/to-uri.svg "NPM package version")](https://www.npmjs.com/package/to-uri)
+[![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
+
 Transliteration for JavaScript &amp; Node.js, basically used for URI generation. As small'n'simple as possible, but has a basic Ukrainian/Russian language detection for **"и"** char replacements.
 
 ## Usage
